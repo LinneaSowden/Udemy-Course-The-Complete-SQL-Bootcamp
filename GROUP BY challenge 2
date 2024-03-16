@@ -1,0 +1,7 @@
+-- Corporate HQ is conducting a study on the relationship between replacement cost and a movie MPAA rating (e.g. G, PG, R, etc...).
+-- What is the average replacement cost per MPAA rating?
+
+SELECT rating, 
+ROUND(AVG(replacement_cost), 2)
+FROM film
+GROUP BY rating;
